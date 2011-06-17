@@ -1,0 +1,36 @@
+
+$content_width: 900px
+$content_padding: 20px
+$left_panel_width: $content_width * (2/3) - $content_padding
+$right_panel_width: $content_width * (1/3) - $content_padding
+
+body, html
+  height: 100%
+
+#world-wrapper
+  width: 100%
+  height: 100%
+  overflow: hidden
+
+#base-container
+  margin: 0 auto
+  width: $content_width
+  height: 100%
+
+#header-layer
+  height: 40px
+
+  #auth-header-widget
+    float: right
+
+#content-layer
+
+  height: auto
+  padding: $content_padding
+
+  #content-left-panel
+    float: left
+    width: $left_panel_width
+  #content-right-panel
+    float: right
+    width: $right_panel_width

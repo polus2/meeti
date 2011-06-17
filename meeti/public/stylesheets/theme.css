@@ -1,0 +1,96 @@
+body, html {
+  height: 100%; }
+
+#world-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+#base-container {
+  margin: 0 auto;
+  width: 900px;
+  height: 100%; }
+
+#header-layer {
+  height: 40px; }
+  #header-layer #auth-header-widget {
+    float: right; }
+
+#content-layer {
+  height: auto;
+  padding: 20px; }
+  #content-layer #content-left-panel {
+    float: left;
+    width: 580px; }
+  #content-layer #content-right-panel {
+    float: right;
+    width: 280px; }
+
+a:hover {
+  background-color: transparent; }
+
+body {
+  background-image: url(/images/backgrounds/b1.jpg);
+  background-repeat: repeat-x repeat-y;
+  font: 13.34px helvetica, arial, freesans, clean, sans-serif; }
+
+#world-wrapper {
+  background-image: url(/images/backgrounds/b2.png);
+  background-repeat: repeat-x; }
+
+#content-layer {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #cccccc; }
+
+#header-layer {
+  padding-top: 20px;
+  padding-bottom: 10px; }
+  #header-layer a#logo_link {
+    text-decoration: none; }
+    #header-layer a#logo_link h1 {
+      float: left;
+      color: #424650;
+      font-size: 40px;
+      width: 300px; }
+  #header-layer #auth-header-widget {
+    padding-top: 30px; }
+    #header-layer #auth-header-widget a {
+      font-weight: bold;
+      color: #4183c4; }
+      #header-layer #auth-header-widget a:hover {
+        color: red;
+        background: transparent; }
+
+#content-layer {
+  font-size: 21px; }
+  #content-layer h1 {
+    color: #333333;
+    font-size: 26px;
+    padding-bottom: 10px; }
+  #content-layer h2 {
+    color: #424650;
+    font-size: 20px;
+    padding-bottom: 10px; }
+  #content-layer p {
+    padding-bottom: 5px; }
+  #content-layer ul li {
+    padding-bottom: 3px;
+    margin-left: 20px;
+    list-style-type: circle; }
+  #content-layer a {
+    color: #4183c4; }
+  #content-layer #sign_up_prompt a {
+    display: block;
+    width: 100%;
+    height: 70px;
+    background-image: url(/images/buttons/get_code.png);
+    background-size: 280px auto; }
+    #content-layer #sign_up_prompt a:hover {
+      background-image: url(/images/buttons/get_code_hover.png); }
+  #content-layer #stat_block h2 {
+    text-align: center; }
+  #content-layer .right_margin {
+    height: 40px; }
+  #content-layer #social-networks-block {
+    text-align: center; }
