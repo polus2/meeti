@@ -5,6 +5,8 @@ Meeti::Application.routes.draw do
   match "how_to_sign_up" => "Index#how_to_sign_up"
   match "sign_up" => "users#new"
 
+  match "validate" => "Validate#validate"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

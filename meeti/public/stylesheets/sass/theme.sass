@@ -97,7 +97,7 @@ form
 
   .coolRoundField
 
-    height: $cool_rounded_field_height
+    height: $cool_rounded_field_height + 20
     width : $cool_rounded_field_width
     padding: $cool_rounded_field_padding
 
@@ -107,6 +107,9 @@ form
     &.valid
       box-shadow: 0 0 5px #0f0
 
+    &.invalid
+      box-shadow: 0 0 5px #f00
+
     &.focused
       box-shadow: 0 0 5px #ff8d00
 
@@ -115,6 +118,13 @@ form
       height: $cool_rounded_field_height
       width : $cool_rounded_field_width
       font-size: 20px
+
+    label.error
+      position: absolute
+      display: block
+      float: left
+      font-size: 12px
+      color: #555
 
   .infieldWrapper
     position: relative
