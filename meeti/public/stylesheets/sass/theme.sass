@@ -69,29 +69,76 @@ body
   #sign_up_prompt
     a
       display: block
-      width  : 100%
+      width  : $right_panel_width
       height : 70px
-      background-image: url(/images/buttons/get_code.png)
-      background-size: $right_panel_width auto
+      background-image: url(/images/buttons/get_code_two.png)
+      background-size: ($right_panel_width*2) auto
+      background-position: 0 0
+      background-repeat: no-repeat
 
       &:hover
-        background-image : url(/images/buttons/get_code_hover.png)
+        background-position: -$right_panel_width 0
 
   #stat_block
     h2
       text-align: center
 
-  .right_margin
-    height: 40px
+
 
   #social-networks-block
     text-align: center
 
 
+$cool_rounded_field_padding : 10px
+$cool_rounded_field_width : $panel_width_for_half_layout - $cool_rounded_field_padding*3
+$cool_rounded_field_height  : 30px
+
+form
+
+  .coolRoundField
+
+    height: $cool_rounded_field_height
+    width : $cool_rounded_field_width
+    padding: $cool_rounded_field_padding
+
+    border-radius: 5px
+    box-shadow: 0px 0px 5px #777
+
+    &.valid
+      box-shadow: 0 0 5px #0f0
+
+    &.focused
+      box-shadow: 0 0 5px #ff8d00
+
+    input
+      border: none
+      height: $cool_rounded_field_height
+      width : $cool_rounded_field_width
+      font-size: 20px
+
+  .infieldWrapper
+    position: relative
 
 
+  .infield_label
+    line-height: $cool_rounded_field_height
+    position: absolute
+    top:  $cool_rounded_field_padding
+    left: $cool_rounded_field_padding
+    color: #ccc
 
+#continue_registration_prompt
+  float: right
+  a
+    display: block
+    width  : 200px
+    height: 50px
+    background-image: url(/images/buttons/continue.png)
+    background-repeat: no-repeat
+    background-size: 200px auto
 
+    &:hover
+      background-image: url(/images/buttons/continue_hover.png)
 
 
 

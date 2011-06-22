@@ -4,6 +4,10 @@ $content_padding: 20px
 $left_panel_width: $content_width * (2/3) - $content_padding
 $right_panel_width: $content_width * (1/3) - $content_padding
 
+$padding_for_half_layout: 5px
+$panel_width_for_half_layout: ($content_width) * (1/2) - $content_padding - $padding_for_half_layout
+
+
 body, html
   height: 100%
 
@@ -31,6 +35,15 @@ body, html
   #content-left-panel
     float: left
     width: $left_panel_width
+    &.half
+      width: $panel_width_for_half_layout - $padding_for_half_layout
+      padding-right: $padding_for_half_layout
+
   #content-right-panel
     float: right
     width: $right_panel_width
+    &.half
+      width: $panel_width_for_half_layout
+
+    .right_margin
+      height: 45px

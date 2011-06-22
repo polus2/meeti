@@ -22,6 +22,13 @@ body, html {
   #content-layer #content-left-panel {
     float: left;
     width: 580px; }
+    #content-layer #content-left-panel.half {
+      width: 420px;
+      padding-right: 5px; }
   #content-layer #content-right-panel {
     float: right;
     width: 280px; }
+    #content-layer #content-right-panel.half {
+      width: 425px; }
+    #content-layer #content-right-panel .right_margin {
+      height: 45px; }

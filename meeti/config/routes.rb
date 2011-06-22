@@ -1,8 +1,9 @@
 Meeti::Application.routes.draw do
-  resources :users
 
+  resources :users
   root :to => "Index#home"
   match "how_to_sign_up" => "Index#how_to_sign_up"
+  match "sign_up" => "users#new"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -15,7 +16,7 @@ Meeti::Application.routes.draw do
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
 
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
+  # Sample resource route (maps HTTP verbs to conutroller actions automatically):
   #   resources :products
 
   # Sample resource route with options:

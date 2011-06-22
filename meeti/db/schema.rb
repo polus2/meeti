@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110617100151) do
+ActiveRecord::Schema.define(:version => 20110621073305) do
 
   create_table "settings", :force => true do |t|
     t.string   "var",                      :null => false
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20110617100151) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "phone"
   end
 
 end

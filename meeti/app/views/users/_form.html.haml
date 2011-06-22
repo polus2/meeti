@@ -1,15 +1,36 @@
 = form_for(@user) do |f|
-  - if @user.errors.any?
-    #error_explanation
-      %h2
-        = pluralize(@user.errors.count, "error")
-        prohibited this user from being saved:
-      %ul
-        - @user.errors.full_messages.each do |msg|
-          %li= msg
-  .field
-    = f.label :login
-    %br/
-    = f.text_field :login
-  .actions
-    = f.submit
+  %p
+    .field.coolRoundField.infieldWrapper
+      = f.text_field :email, "data-infield-label" => "ваш email"
+
+    .field.coolRoundField.infieldWrapper
+      = f.password_field :password, "data-infield-label" => "ваш секретный пароль"
+
+    .field.coolRoundField.infieldWrapper
+      = f.password_field :password_confirmation, "data-infield-label" => "повторите ваш пароль"
+
+    .field.coolRoundField.infieldWrapper
+      = f.text_field :phone, "data-infield-label" => "телефон, например 9152236577"
+
+  #continue_registration_prompt
+    %a{:href => "/users/create"}
+
+- content_for :spinnets do
+
+  =javascript_include_tag "spinnets/jquery.infieldlabel.js"
+  =javascript_include_tag "spinnets/cool_fields.js"
+
+
+- content_for :right do
+  .right_margin
+  %p
+    Пожалуйста, укажите настоящий адрес электронной почты и номер мобильного
+    телефона. Для полноценного использования нашего сервиса вам потребуется
+    подтвердить указанные данные с помощью быстрой процедуры.
+
+  %p
+    Мы обещаем держать в тайне ваши регистрационные данные и не будем передавать
+    их третьим лицам.
+
+= content_for :left_panel_layout do "half" end
+= content_for :right_panel_layout do "half" end

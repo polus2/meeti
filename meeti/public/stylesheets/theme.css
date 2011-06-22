@@ -22,9 +22,16 @@ body, html {
   #content-layer #content-left-panel {
     float: left;
     width: 580px; }
+    #content-layer #content-left-panel.half {
+      width: 420px;
+      padding-right: 5px; }
   #content-layer #content-right-panel {
     float: right;
     width: 280px; }
+    #content-layer #content-right-panel.half {
+      width: 425px; }
+    #content-layer #content-right-panel .right_margin {
+      height: 45px; }
 
 a:hover {
   background-color: transparent; }
@@ -82,15 +89,51 @@ body {
     color: #4183c4; }
   #content-layer #sign_up_prompt a {
     display: block;
-    width: 100%;
+    width: 280px;
     height: 70px;
-    background-image: url(/images/buttons/get_code.png);
-    background-size: 280px auto; }
+    background-image: url(/images/buttons/get_code_two.png);
+    background-size: 560px auto;
+    background-position: 0 0;
+    background-repeat: no-repeat; }
     #content-layer #sign_up_prompt a:hover {
-      background-image: url(/images/buttons/get_code_hover.png); }
+      background-position: -280px 0; }
   #content-layer #stat_block h2 {
     text-align: center; }
-  #content-layer .right_margin {
-    height: 40px; }
   #content-layer #social-networks-block {
     text-align: center; }
+
+form .coolRoundField {
+  height: 30px;
+  width: 395px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #777777; }
+  form .coolRoundField.valid {
+    box-shadow: 0 0 5px lime; }
+  form .coolRoundField.focused {
+    box-shadow: 0 0 5px #ff8d00; }
+  form .coolRoundField input {
+    border: none;
+    height: 30px;
+    width: 395px;
+    font-size: 20px; }
+form .infieldWrapper {
+  position: relative; }
+form .infield_label {
+  line-height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #cccccc; }
+
+#continue_registration_prompt {
+  float: right; }
+  #continue_registration_prompt a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-image: url(/images/buttons/continue.png);
+    background-repeat: no-repeat;
+    background-size: 200px auto; }
+    #continue_registration_prompt a:hover {
+      background-image: url(/images/buttons/continue_hover.png); }
