@@ -7,6 +7,8 @@ Meeti::Application.routes.draw do
 
   match "validate" => "Validate#validate"
 
+  devise_for :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

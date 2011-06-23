@@ -21,7 +21,8 @@ body, html {
   padding: 20px; }
   #content-layer #content-left-panel {
     float: left;
-    width: 580px; }
+    width: 560px;
+    padding-right: 20px; }
     #content-layer #content-left-panel.half {
       width: 420px;
       padding-right: 5px; }
