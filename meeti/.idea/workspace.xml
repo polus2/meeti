@@ -32,19 +32,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_form.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="62" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
+            <state line="15" column="20" selection-start="578" selection-end="578" vertical-scroll-proportion="0.3140394">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="registration.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/spinnets/registration.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="23" selection-start="2339" selection-end="2339" vertical-scroll-proportion="0.8743842">
+            <state line="39" column="61" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,12 +119,12 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/users/new.html.haml" />
         <option value="$PROJECT_DIR$/public/stylesheets/sass/layout.sass" />
-        <option value="$PROJECT_DIR$/app/views/users/_form.html.haml" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/public/stylesheets/sass/theme.sass" />
         <option value="$PROJECT_DIR$/app/controllers/validate_controller.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/spinnets/validation/jquery.validate.min.js" />
         <option value="$PROJECT_DIR$/public/javascripts/spinnets/registration.js" />
+        <option value="$PROJECT_DIR$/app/views/users/_form.html.haml" />
       </list>
     </option>
   </component>
@@ -572,18 +572,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="JavaScript.Libraries" />
     <property name="recentsLimit" value="5" />
-    <property name="options.searchVisible" value="true" />
+    <property name="options.lastSelected" value="JavaScript.Libraries" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Rails.Development: meeti">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -858,98 +858,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="27" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="26" column="27" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/spinnets/jquery.infieldlabel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="38" selection-start="2383" selection-end="2383" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="73" column="38" selection-start="2383" selection-end="2383" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/layout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/sass/layout.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="27" selection-start="197" selection-end="197" vertical-scroll-proportion="0.00729927">
-          <folding />
-        </state>
+        <state line="6" column="27" selection-start="197" selection-end="197" vertical-scroll-proportion="0.00729927" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index/home.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="17" column="17" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/spinnets/validation/jquery.validate.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="642" column="106" selection-start="19620" selection-end="19620" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/validate_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="59" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="59" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/spinnets/cool_fields.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="1" selection-end="103" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="1" column="0" selection-start="1" selection-end="103" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/sass/theme.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="19" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.0">
+        <state line="125" column="19" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/spinnets/registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="61" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="62" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/validate_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/spinnets/validation/jquery.validate.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="642" column="106" selection-start="19620" selection-end="19620" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/spinnets/registration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="23" selection-start="2339" selection-end="2339" vertical-scroll-proportion="0.8743842">
+        <state line="15" column="20" selection-start="578" selection-end="578" vertical-scroll-proportion="0.3140394">
           <folding />
         </state>
       </provider>
