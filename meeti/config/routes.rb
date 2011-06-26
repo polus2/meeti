@@ -1,5 +1,9 @@
 Meeti::Application.routes.draw do
 
+  get "dashboards/index"
+
+  get "dashboards/update"
+
   resources :authentications
 
   root :to => "Index#home"
