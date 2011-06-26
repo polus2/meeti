@@ -1,13 +1,21 @@
 Meeti::Application.routes.draw do
 
-  resources :users
+  resources :authentications
+
   root :to => "Index#home"
   match "how_to_sign_up" => "Index#how_to_sign_up"
-  match "sign_up" => "users#new"
 
   match "validate" => "Validate#validate"
 
-  devise_for :users
+  devise_for :users,
+             :controllers => {
+                 :registrations => 'registrations'
+             },
+             :path_names => {
+                 :sign_up => "sign_up"
+             }
+
+  match '/auth/:provider/callback' => 'authentications#create'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

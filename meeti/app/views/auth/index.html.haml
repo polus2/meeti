@@ -9,12 +9,12 @@
 - content_for :right do
   .right_margin
   #social-networks-block
-    %a{:href => "/sign_up_vkontakte"}
+    %a{:href => "/auth/vkontakte/"}
       %img{:width => "70%", :src => "/images/logos/vkontakte.jpg"}
 
 %p
   Если вы не хотите использовать социальные сети для входа в
   Meeti, вы всегда можете
-  %a{:href => sign_up_path}
+  %a{:href => new_user_registration_path}
     зарегистрироваться
   у нас.

@@ -120,6 +120,14 @@ form .coolRoundField {
     height: 30px;
     width: 395px;
     font-size: 20px; }
+  form .coolRoundField input[type='checkbox'] {
+    display: inline;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 2px; }
+  form .coolRoundField .checkLabel {
+    line-height: 20px; }
   form .coolRoundField label.error {
     position: absolute;
     display: block;

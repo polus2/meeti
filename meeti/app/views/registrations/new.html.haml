@@ -1,0 +1,43 @@
+- if session[:omniauth]
+  %h1 Здравствуйте, #{session[:omniauth]["user_info"]["first_name"]}
+- else
+  %h1 Регистрация пользователя
+
+= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+  %p
+    .field.coolRoundField.infieldWrapper
+      = f.text_field :email, "data-infield-label" => "ваш email"
+
+    - unless session[:omniauth]
+      .field.coolRoundField.infieldWrapper
+        = f.password_field :password, "data-infield-label" => "ваш секретный пароль"
+
+      .field.coolRoundField.infieldWrapper
+        = f.password_field :password_confirmation, "data-infield-label" => "повторите ваш пароль"
+
+  #continue_registration_prompt
+    %a{:onClick => "(function(){$('form').submit()})()"}
+
+- content_for :spinnets do
+
+  =javascript_include_tag "spinnets/jquery.infieldlabel.js"
+  =javascript_include_tag "spinnets/cool_fields.js"
+  =javascript_include_tag "spinnets/registration.js"
+
+- content_for :right do
+  .right_margin
+  %p
+    -unless session[:omniauth]
+      Пожалуйста, укажите настоящий адрес электронной почты и номер мобильного
+      телефона. Для полноценного использования нашего сервиса вам потребуется
+      подтвердить указанные данные с помощью быстрой процедуры.
+    -else
+      Для завершения регистрации нам необходимо знать о вас чуть больше, чем мы можем
+      узнать от #{Authentication.provider_name(session[:omniauth]["provider"])}. Пожалуйста, заполните поля слева.
+
+  %p
+    Мы обещаем держать в тайне ваши регистрационные данные и не будем передавать
+    их третьим лицам.
+
+= content_for :left_panel_layout do "half" end
+= content_for :right_panel_layout do "half" end

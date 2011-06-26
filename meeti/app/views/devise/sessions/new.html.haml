@@ -1,0 +1,42 @@
+
+%h1
+  Заходите скорее!
+
+= form_for(User.new, :url => new_user_session_path) do |f|
+  %p
+    .field.coolRoundField.infieldWrapper{:class => !flash[:alert].blank? ? "invalid" : ""}
+      = f.text_field :email, "data-infield-label" => "ваш email"
+      %label{:for=>"user_email", :generated=>"false", :class=>"error"}
+        Пожалуйста, введите email, под которым вы регистрировались
+
+    .field.coolRoundField.infieldWrapper{:class => !flash[:alert].blank? ? "invalid" : ""}
+      = f.password_field :password, "data-infield-label" => "ваш секретный пароль"
+      %label{:for=>"user_email", :generated=>"false", :class=>"error"}
+        Если вы забыли пароль, нажмите
+        %a{:href => "recover_pass"}
+          сюда
+
+    .field.coolRoundField.infieldWrapper.checkBoxField
+      = f.check_box :remember_me, :checked => true
+      = f.label :remember_me, "Запомнить меня", :class => "checkLabel"
+      %label{:for=>"remember_me", :generated=>"false", :class=>"error"}
+        Если вы отметите этот флажок, вам не придется вводить пароль в следующий раз
+
+    #continue_registration_prompt
+      %a{:onClick => "(function(){$('form').submit()})()"}
+
+- content_for :right do
+  .right_margin
+  %p
+    Или войдите, используя аккаунт в одном и следующих сервисов:
+  #social-networks-block
+    %a{:href => "/auth/vkontakte"}
+      %img{:width => "40%", :src => "/images/logos/vkontakte.jpg"}
+
+- content_for :spinnets do
+
+  =javascript_include_tag "spinnets/jquery.infieldlabel.js"
+  =javascript_include_tag "spinnets/cool_fields.js"
+
+= content_for :left_panel_layout do "half" end
+= content_for :right_panel_layout do "half" end
